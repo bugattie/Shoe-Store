@@ -18,8 +18,6 @@ const useStyles = makeStyles((theme) => ({
   
 export default function MainGrid() {
   const classes = useStyles();
-  // const cardClasses = useStylesCard();
-
 
   const shoes = {
     "air-jordan-3-valor-blue": {
@@ -61,10 +59,10 @@ export default function MainGrid() {
       <Container maxWidth="md" className="container">
           <div className="product-list">
             {
-              Object.entries(shoes).map(([key, {name, img}]) => {
+              Object.entries(shoes).map(([productId, {name, img}]) => {
                 return <div className="assign">
                   <Paper variant="outlined" className="PaperHead">
-                    <Link to={`/products/${key}`}>
+                    <Link to={`/products/${productId}`}>
                       <img src={img} alt={name} className="Product-img"/>
                       <h2 className="Product-hd">{name}</h2>
                     </Link>

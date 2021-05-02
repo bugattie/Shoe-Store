@@ -3,15 +3,14 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  Outlet
 } from 'react-router-dom';
 
 import Appbar from './components/Appbar';
-import { Home } from './components/Home';
+import { HomeProduct } from './components/HomeProduct';
 import { Product } from './components/Product/Product';
-import { ProductDetails } from './components/ProductDetails';
+import { ProductDetails } from './components/Product/ProductDetails';
 import { NotFound } from './components/NotFound';
+import { Home } from './components/Home';
 
 function App() {
   return (
@@ -20,7 +19,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="products" element={<Product />}>
+        <Route path="products" element={<HomeProduct />}>
+          <Route path="/" element={<Product />} />
           <Route path=":productId" element={<ProductDetails />} />
         </Route>
         <Route path="*" element={<NotFound />} />
