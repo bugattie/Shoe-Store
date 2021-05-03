@@ -31,13 +31,19 @@
 }
 
 .PaperHead{
-  width: 250px;
+  width: 270px;
   text-align: center;
   margin: 10px;
 }
 
 .Product-img{
   height: 250px;
+  width: 270px;
+}
+
+.Product-hd{
+  text-decoration: none !important;
+  color: #000;
   width: 250px;
 }
 
@@ -45,7 +51,6 @@
   text-align: center;
   margin: 10px;
   width: 400px;
-
 }
 
 .Product-img1{
@@ -53,11 +58,19 @@
   width: 400px;
 }
 
-.Product-hd{
-  text-decoration: none i !important;
-  color: #000;
+.items {
+ text-align: center;
 }
 
+.bg {
+  background-color: #008B8B !important;
+  color: #FFF !important;
+  height: 50px;
+}
+
+.about-container {
+  padding: 20px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

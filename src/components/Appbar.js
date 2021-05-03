@@ -44,7 +44,7 @@ export default function Appbar() {
             <Link to="products" className={classes.links}>
                 Our Products
             </Link>
-            <Link to="#" className={classes.links}>
+            <Link to="about" className={classes.links}>
                 About Us
             </Link>
           </Typography>
